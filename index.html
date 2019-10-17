@@ -1,0 +1,43 @@
+<html>
+	<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+		<script src="/resources/sap-ui-core.js"
+				id="sap-ui-bootstrap"
+				data-sap-ui-libs="sap.m"
+				data-sap-ui-theme="sap_bluecrystal"
+				data-sap-ui-xx-bindingSyntax="complex"
+				data-sap-ui-resourceroots='{"DisplayMonth": "./"}'>
+		</script>
+		
+		<script>
+		let btnBuy = new sap.m.Button({
+                       	key: "keyBuy",
+                        text: "Buy",
+                        press: function() 
+                              {
+         					   alert("Buy button is pressed")
+                              }
+		                    }
+                           );
+		let btnSell = new sap.m.Button({
+                       	key: "keySell",
+                        text: "Sell",
+                        press: function() 
+                              {
+         					   alert("Sell button is pressed")
+                              }
+		                    }
+                           );	
+			
+			btnBuy.placeAt("content");
+    		btnSell.placeAt("content");
+
+		</script>
+
+		</head>
+	<body class="sapUiBody" role="application">
+		<h1>Learning SAPUI5</h1>
+		<div id="content"></div>
+	</body>
+</html>
